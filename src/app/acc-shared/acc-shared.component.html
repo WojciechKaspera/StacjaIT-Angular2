@@ -8,6 +8,6 @@
           <p class="input-title">Password:</p>
           <input type="password" class="input" placeholder="password" formControlName="password">
         </div>
-        <button type="submit" class="btn">{{actionName}}</button>
+        <button type="submit" [disabled]="form.invalid" class="btn">{{actionName}}</button>
   </form>
 </section>

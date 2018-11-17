@@ -1,5 +1,5 @@
 import { Component, OnInit, Input } from '@angular/core';
-import { FormGroup, FormControl } from '@angular/forms';
+import { FormGroup, FormControl, Validators } from '@angular/forms';
 import { Router } from '@angular/router';
 
 @Component({
@@ -23,8 +23,8 @@ export class AccSharedComponent implements OnInit {
   }
 
   form = new FormGroup({
-    username: new FormControl(''),
-    password: new FormControl('')
+    username: new FormControl('', Validators.pattern('/^[A-Z][a-z]* [A-Z][a-z]*[a-z]$/')),
+    password: new FormControl('', Validators.required)
   });
 
   constructor(private router: Router) { }
