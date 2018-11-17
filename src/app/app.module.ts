@@ -14,7 +14,7 @@ const routes: Routes = [
   {path: 'home', component: WelcomeComponent},
   {path: 'login', component: LoginComponent},
   {path: 'register', component: RegisterComponent},
-  {path: '**', component: NotFoundComponent},
+  {path: '**', redirectTo: 'home'},
 ];
 
 @NgModule({

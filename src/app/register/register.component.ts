@@ -9,6 +9,11 @@ export class RegisterComponent implements OnInit {
 
   constructor() { }
 
+  register(form) {
+      const username = form.username;
+      alert(`Uzytkownik ${username} zarejestrowany!`);
+  }
+
   ngOnInit() {
   }
 
