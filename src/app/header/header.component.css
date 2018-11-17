@@ -1,0 +1,16 @@
+.header-section {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.header-menu-link {
+    text-decoration: none;
+    color: grey;
+    margin-right: 20px;
+}
+
+.header-menu-link:hover {
+    text-decoration: underline;
+    color: black;
+}

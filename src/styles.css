@@ -1,21 +1,19 @@
-.first-example-box {
-    background: rgb(177, 177, 207);
-}
-
-.second-example-box {
-    background: rgb(177, 207, 207);
-}
-
-.third-example-box {
-    background: rgb(207, 177, 177);
-}
-
-.fourth-example-box {
-    background: rgb(255, 255, 255);
-}
-
 body {
     font-family: Arial, Helvetica, sans-serif;
+}
+
+.btn {
+    background: white;
+    padding: 10px 0;
+    margin: 10px 0;
+    font-size: 16px;
+    border: 1px solid rgb(139, 139, 139);
+    border-radius: 4px;
+}
+
+.btn:hover {
+    background: rgb(194, 194, 194);
+    cursor: pointer;
 }
 
 .routing-example-title {
@@ -28,4 +26,5 @@ body {
     justify-content: center;
     width: 100%;
     height: 100px;
+    background: rgb(177, 177, 207);
 }
