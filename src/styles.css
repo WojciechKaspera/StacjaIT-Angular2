@@ -12,6 +12,10 @@ body {
     border-radius: 4px;
 }
 
+.btn-small {
+    min-width: 40px;
+}
+
 .btn:not(:disabled):hover {
     background: rgb(194, 194, 194);
     cursor: pointer;

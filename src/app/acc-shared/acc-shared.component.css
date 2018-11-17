@@ -6,6 +6,17 @@
     justify-content: center;
 }
 
+.form-array-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.cars-buttons-box {
+    display: flex;
+    justify-content: space-evenly;
+}
+
 .form {
     display: flex;
     flex-direction: column;

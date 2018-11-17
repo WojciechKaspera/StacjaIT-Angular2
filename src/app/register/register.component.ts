@@ -11,7 +11,8 @@ export class RegisterComponent implements OnInit {
 
   register(form) {
       const username = form.username;
-      alert(`Uzytkownik ${username} zarejestrowany!`);
+      const cars = form.cars;
+      alert(`Uzytkownik ${username} zarejestrowany z samochodami: ${cars}.`);
   }
 
   ngOnInit() {

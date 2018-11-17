@@ -8,6 +8,19 @@
           <p class="input-title">Password:</p>
           <input type="password" class="input" placeholder="password" formControlName="password" [class.error]="form.controls['username'].invalid && form.controls['username'].touched">
         </div>
+        <div class="cars-section" *ngIf="actionName === 'Register'">
+            <p>Owned cars:</p>
+            <div formArrayName="cars" class="form-array-box">
+                <div class="input-box" *ngFor="let car of form.get('cars').controls, let i = index">
+                    <p class="input-title">Car{{i+1}}:</p>
+                    <input type="text" class="input" placeholder="Car name" formControlName="{{i}}" [class.error]="form.controls['username'].invalid && form.controls['username'].touched">
+                </div>
+            </div>
+            <div class="cars-buttons-box">
+              <button class="btn btn-small" (click)="addCar($event)">+</button>
+              <button class="btn btn-small" (click)="removeCar($event)">-</button>
+            </div>
+        </div>
         <button type="submit" [disabled]="form.invalid" class="btn">{{actionName}}</button>
   </form>
 </section>
